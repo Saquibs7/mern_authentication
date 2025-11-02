@@ -17,7 +17,7 @@ const App = () => {
   useEffect(() => {
     const getUser = async () => {
       await axios
-        .get("http://localhost:4000/api/v1/user/me", { withCredentials: true })
+        .get("https://mern-authentication-ctn2.onrender.com/api/v1/user/me", { withCredentials: true })
         .then((res) => {
           setUser(res.data.user);
           setIsAuthenticated(true);

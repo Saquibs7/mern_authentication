@@ -15,7 +15,7 @@ const ResetPassword = () => {
     e.preventDefault();
     await axios
       .put(
-        `http://localhost:4000/api/v1/user/password/reset/${token}`,
+        `https://mern-authentication-ctn2.onrender.com/api/v1/user/password/reset/${token}`,
         { password, confirmPassword },
         {
           withCredentials: true,
