@@ -8,7 +8,7 @@ import userRouter from "./routes/userRouter.js";
 import { removeUnverifiedAccounts } from "./automation/removeUnverifiedAccounts.js";
 
 export const app = express();
-config({ path: "./config.env" });
+config({ path: "./.env" });
 
 app.use(
   cors({
